@@ -189,12 +189,16 @@ def create_ticket(flight_no):
     source_airport = request.json['source_airport']
     destination_airport=request.json['destination_airport']
     info = u.find_one({'flight_no': flight_no})
+    _id= ObjectId()
+    _id== ObjectId(str(_id))
+    booking_id=str(_id)
+
 
 
     if info :
         users = v.insert({'no_of_seat': no_of_seat, 'flight_no': flight_no, 'user_email': user_email,'user_mob': user_mob,'source_airport': source_airport, 'destination_airport': destination_airport})
         print(users)
-        message = make_response("users")
+        message = make_response(jsonify({'booking_id':booking_id}))
         message.mimetype='text'
 
         message.status_code = 201
