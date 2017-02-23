@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+{% if info  %}
+        <detail>
+        <flight_name>{{info.flight_name}}</flight_name>
+        <flight_no>{{info.flight_no}}</flight_no>
+        <total_seat>{{info.total_seat}}</total_seat>
+
+    </detail>
+ {% endif %}

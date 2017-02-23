@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    {% for val in info %}
+
+    <detail>
+        <flight_name>{{val.flight_name}}</flight_name>
+        <flight_no>{{val.flight_no}}</flight_no>
+        <total_seat>{{val.total_seat}}</total_seat>
+
+    </detail>
+
+    {% endfor %}
