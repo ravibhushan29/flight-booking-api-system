@@ -14,11 +14,11 @@ Design a flight booking api system. You should have following end points.
 
 
 
-   GET: /flights     : Returns all the flights
-   GET: /flight/<flight_no>   : Returns specific flight data
-   HEAD: /flight/<flight_no> : Check if flight exist 
-   POST /flights      : Add new flight. Each flight must have atleast total seats. 
-   PATCH /flight/<flight_no> : Update flight dataDELETE /flight/<flight_no>
+     GET: /flights     : Returns all the flights
+     GET: /flight/<flight_no>   : Returns specific flight data
+     HEAD: /flight/<flight_no> : Check if flight exist 
+     POST /flights      : Add new flight. Each flight must have atleast total seats. 
+     PATCH /flight/<flight_no> : Update flight dataDELETE /flight/<flight_no>
 
 
 
